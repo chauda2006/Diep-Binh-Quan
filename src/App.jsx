@@ -1,25 +1,40 @@
 import React from 'react';
+import './App.css';
 
 function App() {
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px', fontFamily: 'Arial, sans-serif' }}>
-      <h1>Bài tập BT2 - Hello Framework</h1>
-      <div style={{ 
-        border: '2px solid #61dafb', 
-        display: 'inline-block', 
-        padding: '25px', 
-        borderRadius: '12px',
-        backgroundColor: '#282c34',
-        color: 'white',
-        boxShadow: '0 4px 10px rgba(0,0,0,0.3)'
-      }}>
-        <h2>Thẻ giới thiệu bản thân</h2>
-        <p><strong>Họ và tên:</strong> Chauda</p>
-        <p><strong>Lớp:</strong> Công nghệ thông tin</p>
-        <p><strong>Sở thích:</strong> Lập trình web, thiết kế UI/UX</p>
-        <p>
-          <strong>GitHub:</strong> <a href="https://github.com" target="_blank" rel="noreferrer" style={{ color: '#61dafb' }}>Xem trang GitHub</a>
-        </p>
+    <div className="portfolio-container">
+      <div className="profile-card">
+        <div className="avatar-glow">
+          <span className="avatar-initial">ĐQ</span>
+        </div>
+        <h1 className="title">Chào bạn, tôi là</h1>
+        <h2 className="name">Chauda</h2>
+        <p className="major">Sinh viên ngành Công nghệ thông tin</p>
+        
+        <div className="divider"></div>
+
+        <div className="bio-info">
+          <div className="info-item">
+            <span className="label">Đam mê:</span>
+            <span className="value">UI/UX Design & Web Development</span>
+          </div>
+          <div className="info-item">
+            <span className="label">Sở thích:</span>
+            <span className="value">Lập trình, sáng tạo giao diện số</span>
+          </div>
+        </div>
+
+        <div className="action-buttons">
+          <a 
+            href="https://github.com/chauda2006" 
+            target="_blank" 
+            rel="noreferrer" 
+            className="btn github-btn"
+          >
+            Khám phá GitHub
+          </a>
+        </div>
       </div>
     </div>
   );
